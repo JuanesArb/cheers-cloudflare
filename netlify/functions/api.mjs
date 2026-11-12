@@ -36,6 +36,28 @@ async function call(path,options={}){
 const db=(path,options)=>call(`/rest/v1/${path}`,options);
 const supaAuth=(path,options)=>call(`/auth/v1/${path}`,options);
 
+// Acceso de equipo independiente de Auth: el local trabaja con PINes sencillos
+// y firmados por el servidor. Así una cuenta de Supabase dañada no detiene caja.
+const STAFF=Object.freeze([
+  {email:"admin@cheers.local",pin:"1234",name:"Administrador",role:"Administrador"},
+  {email:"dora@cheers.local",pin:"1111",name:"Dora",role:"Caja"},
+  {email:"daniela@cheers.local",pin:"2222",name:"Daniela",role:"Caja"},
+  {email:"juan@cheers.local",pin:"3333",name:"Juan",role:"Caja"}
+]);
+const encoder=new TextEncoder();
+const base64url=bytes=>btoa(String.fromCharCode(...bytes)).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+async function staffSignature(email){
+  const key=await crypto.subtle.importKey("raw",encoder.encode(keys().service),{name:"HMAC",hash:"SHA-256"},false,["sign"]);
+  return base64url(new Uint8Array(await crypto.subtle.sign("HMAC",key,encoder.encode(`cheers-staff:${email}`))));
+}
+async function staffToken(person){return `cheers-staff.${person.email}.${await staffSignature(person.email)}`}
+async function staffFromToken(token){
+  const match=String(token||"").match(/^cheers-staff\.([^\.]+@cheers\.local)\.([A-Za-z0-9_-]+)$/);
+  if(!match)return null;
+  const person=STAFF.find(item=>item.email===match[1]);
+  return person&&match[2]===await staffSignature(person.email)?person:null;
+}
+
 async function setup(){
   if(initialized)return initialized;
   initialized=(async()=>{
@@ -107,6 +129,8 @@ async function readBody(request){try{return await request.json()}catch{return {}
 async function currentUser(request){
   const token=(request.headers.get("authorization")||"").replace(/^Bearer\s+/i,"");
   if(!token)throw new Error("Inicia sesión para continuar.");
+  const localStaff=await staffFromToken(token);
+  if(localStaff)return {id:`staff:${localStaff.email}`,name:localStaff.name,email:localStaff.email,role:localStaff.role,token};
   const account=await supaAuth("user",{token});
   const profile=one(await db(`profiles?id=eq.${account.id}&select=*`));
   if(!profile)throw new Error("Este usuario no tiene acceso a Cheers.");
@@ -234,12 +258,10 @@ export default async request=>{
       return publicJson(await publicMenu());
     }
     if(path==="/auth/login"&&request.method==="POST"){
-      const data=await setup();await staffAccounts(data.org,data.location);const input=await readBody(request);const {url,service}=keys();
-      const response=await fetch(`${url}/auth/v1/token?grant_type=password`,{method:"POST",headers:{apikey:service,"content-type":"application/json"},body:JSON.stringify({email:String(input.email||"").trim(),password:String(input.pin||"")})});
-      const session=await response.json();if(!response.ok)return fail("Correo o PIN incorrecto.",401);
-      const profile=one(await db(`profiles?id=eq.${session.user.id}&select=*`));
-      const roles={admin:"Administrador",manager:"Administrador",cashier:"Caja",bar:"Barra",kitchen:"Cocina"};
-      return json({user:{name:profile.name,email:session.user.email,role:roles[profile.role],token:session.access_token}});
+      const input=await readBody(request),email=String(input.email||"").trim().toLowerCase(),pin=String(input.pin||"");
+      const person=STAFF.find(item=>item.email===email&&item.pin===pin);
+      if(person)return json({user:{name:person.name,email:person.email,role:person.role,token:await staffToken(person)}});
+      return fail("Correo o PIN incorrecto.",401);
     }
     if(path==="/auth/me"&&request.method==="GET")return json({user:await currentUser(request)});
     if(path==="/auth/logout"&&request.method==="POST")return json({ok:true});
