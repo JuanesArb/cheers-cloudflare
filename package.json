@@ -1,0 +1,12 @@
+{
+  "name": "cheers-cafe-bar",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node scripts/netlify-build.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

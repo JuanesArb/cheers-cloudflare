@@ -1,0 +1,1009 @@
+{
+  "organization": {
+    "id": "org-cheers",
+    "name": "Cheers",
+    "plan": "starter"
+  },
+  "location": {
+    "id": "cheers-central",
+    "name": "Cheers",
+    "currency": "COP"
+  },
+  "tables": [
+    {
+      "id": 1,
+      "name": "Mesa 01",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Mesa 02",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Mesa 03",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Mesa 04",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Mesa 05",
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "Mesa 06",
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "Mesa 07",
+      "active": true
+    },
+    {
+      "id": 8,
+      "name": "Mesa 08",
+      "active": true
+    },
+    {
+      "id": 9,
+      "name": "Mesa 09",
+      "active": true
+    },
+    {
+      "id": 10,
+      "name": "Mesa 10",
+      "active": true
+    },
+    {
+      "id": 11,
+      "name": "Mesa 11",
+      "active": true
+    },
+    {
+      "id": 12,
+      "name": "Mesa 12",
+      "active": true
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-1",
+      "name": "Admin Cheers",
+      "role": "Administrador",
+      "email": "admin@cheers.local"
+    },
+    {
+      "id": "usr-2",
+      "name": "Sofía",
+      "role": "Barra",
+      "email": "sofia@cheers.local"
+    }
+  ],
+  "products": [
+    {
+      "id": "postres",
+      "name": "Tortas, muffins y postres",
+      "price": 5000,
+      "category": "comida",
+      "description": "Según referencia: $5.000 a $9.000",
+      "tag": "Cocina",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-comida.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "papitas",
+      "name": "Papitas de paquete",
+      "price": 5000,
+      "category": "comida",
+      "description": "",
+      "tag": "Cocina",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-comida.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "cuchareable",
+      "name": "Cuchareable",
+      "price": 6000,
+      "category": "comida",
+      "description": "Chía, yogurt griego, granola y fruta",
+      "tag": "Cocina",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-comida.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "sandwich",
+      "name": "Sandwich",
+      "price": 15000,
+      "category": "comida",
+      "description": "Pollo, carne desmechada o atún",
+      "tag": "Cocina",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-comida.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "choripan",
+      "name": "Choripán",
+      "price": 15000,
+      "category": "comida",
+      "description": "Con chorizo argentino",
+      "tag": "Cocina",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-comida.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "pizza-personal",
+      "name": "Pizza personal",
+      "price": 12000,
+      "category": "comida",
+      "description": "Caprichosa, vegetariana, hawaiana, romana, prosciutto, veneciana o margarita",
+      "tag": "Cocina",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-comida.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "waffle",
+      "name": "Waffle",
+      "price": 12000,
+      "category": "comida",
+      "description": "Nutella y frutos rojos",
+      "tag": "Cocina",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-comida.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "espresso-simple",
+      "name": "Espresso",
+      "price": 3000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "espresso-doble",
+      "name": "Espresso doble",
+      "price": 4000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "americano",
+      "name": "Americano",
+      "price": 3000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "capuchino",
+      "name": "Capuchino",
+      "price": 5000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "chocolate",
+      "name": "Chocolate en leche",
+      "price": 5000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "cool-brown",
+      "name": "Cool brown naranja",
+      "price": 7000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "cafe-frio",
+      "name": "Café frío",
+      "price": 7000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "cafe-cremoso",
+      "name": "Café cremoso",
+      "price": 7000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "capuchino-baileys",
+      "name": "Capuchino de Baileys",
+      "price": 10000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "te-chai",
+      "name": "Té chai",
+      "price": 7000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "te-matcha",
+      "name": "Té matcha",
+      "price": 8000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "jugo-verde",
+      "name": "Jugo verde",
+      "price": 5000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "aromatica",
+      "name": "Aromática",
+      "price": 3000,
+      "category": "cafe",
+      "description": "",
+      "tag": "Café",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-cafe.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "vaso-tea",
+      "name": "Vaso de tea",
+      "price": 3000,
+      "category": "bebidas",
+      "description": "Limón o durazno",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "agua",
+      "name": "Botella de agua",
+      "price": 2000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "soda",
+      "name": "Soda",
+      "price": 4000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "gatorade",
+      "name": "Gatorade",
+      "price": 6000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "coca-cola",
+      "name": "Coca Cola",
+      "price": 5000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "cola-pola",
+      "name": "Cola & Pola",
+      "price": 4000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "hatsu",
+      "name": "Hatsu tea",
+      "price": 8000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "cool-drink",
+      "name": "Cool drink",
+      "price": 5000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "sparkling",
+      "name": "Sparkling",
+      "price": 6000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "canada-dry",
+      "name": "Canada Dry",
+      "price": 4000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "tamarindo",
+      "name": "Tamarindo",
+      "price": 4000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "jugo-hit",
+      "name": "Jugo Hit",
+      "price": 4000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "red-bull",
+      "name": "Red Bull",
+      "price": 10000,
+      "category": "bebidas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "andina",
+      "name": "Andina",
+      "price": 5000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "poker",
+      "name": "Poker",
+      "price": 6000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "heineken",
+      "name": "Heineken",
+      "price": 6000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "pilsen",
+      "name": "Pilsen",
+      "price": 6000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "aguila",
+      "name": "Águila",
+      "price": 6000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "stella",
+      "name": "Stella Artois",
+      "price": 7000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "corona",
+      "name": "Corona",
+      "price": 7000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "club-colombia",
+      "name": "Club Colombia",
+      "price": 7000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "cordilleras",
+      "name": "3 Cordilleras rosada",
+      "price": 7000,
+      "category": "cervezas",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "four-loko",
+      "name": "Four Loko",
+      "price": 20000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "smirnoff",
+      "name": "Smirnoff",
+      "price": 10000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "media-aguardiente-ron",
+      "name": "Media aguardiente o ron",
+      "price": 50000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "media-buchanans",
+      "name": "Media de Buchanans",
+      "price": 150000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "jimador",
+      "name": "Botella de Jimador",
+      "price": 150000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "amarillo",
+      "name": "Botella Amarillo",
+      "price": 80000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "trago-individual",
+      "name": "Trago individual",
+      "price": 4000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "trago-ron",
+      "name": "Trago de ron",
+      "price": 4000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "trago-guaro",
+      "name": "Trago de aguardiente",
+      "price": 4000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "trago-buchanans",
+      "name": "Trago de Buchanans",
+      "price": 10000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "trago-jimador",
+      "name": "Trago de Jimador",
+      "price": 7000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "trago-tequila",
+      "name": "Trago de tequila",
+      "price": 7000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "cuartos-licor",
+      "name": "Cuartos de licor",
+      "price": 25000,
+      "category": "licores",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "granizado-kids",
+      "name": "Granizado kids",
+      "price": 5000,
+      "category": "especiales",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "granizado-licor",
+      "name": "Granizado con licor",
+      "price": 6000,
+      "category": "especiales",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "granizado-cremoso",
+      "name": "Granizado cremoso con licor",
+      "price": 7000,
+      "category": "especiales",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "limonada",
+      "name": "Limonada",
+      "price": 6000,
+      "category": "especiales",
+      "description": "Hierbabuena, mango biche, fresa bombón o coco",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "malteada",
+      "name": "Malteada",
+      "price": 7000,
+      "category": "especiales",
+      "description": "Oreo, arequipe, café, avena o milo",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "soda-preparada",
+      "name": "Soda preparada",
+      "price": 7000,
+      "category": "especiales",
+      "description": "Lychee, cereza, granadina o maracuyá",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "smoothie-agua",
+      "name": "Smoothie en agua",
+      "price": 6000,
+      "category": "especiales",
+      "description": "Maracumango, fresakiwi, naranjazanahoria o cocopiña",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "smoothie-leche",
+      "name": "Smoothie en leche",
+      "price": 8000,
+      "category": "especiales",
+      "description": "Maracumango, fresakiwi, naranjazanahoria o cocopiña",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "tinto-verano",
+      "name": "Tinto de verano",
+      "price": 15000,
+      "category": "especiales",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "sangria",
+      "name": "Copa de sangría",
+      "price": 15000,
+      "category": "especiales",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "gin-tonic",
+      "name": "Gin tonic",
+      "price": 15000,
+      "category": "especiales",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    },
+    {
+      "id": "helado-mascotas",
+      "name": "Helado para mascotas",
+      "price": 5000,
+      "category": "especiales",
+      "description": "",
+      "tag": "Cheers",
+      "accent": "#75a94a",
+      "imageUrl": "/assets/images/menu-bebidas.png",
+      "active": true,
+      "recipe": []
+    }
+  ],
+  "inventory": [
+    {
+      "id": "coffee",
+      "name": "Café de origen",
+      "stock": 1400,
+      "unit": "g",
+      "minimum": 500,
+      "cost": 0
+    },
+    {
+      "id": "milk",
+      "name": "Leche entera",
+      "stock": 3200,
+      "unit": "ml",
+      "minimum": 1000,
+      "cost": 0
+    },
+    {
+      "id": "gin",
+      "name": "Gin",
+      "stock": 860,
+      "unit": "ml",
+      "minimum": 300,
+      "cost": 0
+    },
+    {
+      "id": "vodka",
+      "name": "Vodka",
+      "stock": 540,
+      "unit": "ml",
+      "minimum": 300,
+      "cost": 0
+    },
+    {
+      "id": "bread",
+      "name": "Pan masa madre",
+      "stock": 18,
+      "unit": "und",
+      "minimum": 8,
+      "cost": 0
+    },
+    {
+      "id": "cheese",
+      "name": "Queso madurado",
+      "stock": 720,
+      "unit": "g",
+      "minimum": 300,
+      "cost": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "6a158058-9e54-44c7-a4db-7a89bd2f29a2",
+      "code": "CH-0102",
+      "type": "takeaway",
+      "tableId": null,
+      "items": [
+        {
+          "productId": "postres",
+          "name": "Tortas, muffins y postres",
+          "quantity": 1,
+          "unitPrice": 5000
+        },
+        {
+          "productId": "waffle",
+          "name": "Waffle",
+          "quantity": 1,
+          "unitPrice": 12000
+        }
+      ],
+      "total": 17000,
+      "status": "completed",
+      "createdAt": "2026-10-27T20:30:22.485Z",
+      "completedAt": "2026-10-27T20:30:22.485Z",
+      "source": "pos"
+    },
+    {
+      "id": "71e6d910-a8e2-4ac2-8592-d58ead96c60a",
+      "code": "CH-0101",
+      "type": "table",
+      "tableId": 8,
+      "notes": "",
+      "items": [
+        {
+          "productId": "espresso",
+          "name": "Espresso doble",
+          "quantity": 1,
+          "unitPrice": 7000
+        }
+      ],
+      "total": 7000,
+      "status": "completed",
+      "createdAt": "2026-09-18T18:21:38.138Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "eacaf970-485d-4358-a70a-9049ec129727",
+      "orderId": "71e6d910-a8e2-4ac2-8592-d58ead96c60a",
+      "amount": 7000,
+      "createdAt": "2026-09-18T20:56:01.292Z",
+      "method": "Efectivo",
+      "receivedBy": "Admin Cheers",
+      "paidAt": "2026-09-18T20:56:01.292Z"
+    },
+    {
+      "id": "fdabc3ca-d6f2-42bc-a094-0647a6dc6e59",
+      "orderId": "6a158058-9e54-44c7-a4db-7a89bd2f29a2",
+      "amount": 17000,
+      "method": "Nequi",
+      "receivedBy": "Admin Cheers",
+      "paidAt": "2026-10-27T20:30:22.485Z"
+    }
+  ],
+  "cashSessions": []
+}
